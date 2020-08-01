@@ -13,7 +13,7 @@ function App() {
       <BannerMain
         videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
         url={dadosIniciais.categorias[0].videos[0].url}
-        videoDescription={"O que é Front-end? Trabalhando na área os termos HTML, CSS e JavaScript fazem parte da rotina das desenvolvedoras e desenvolvedores. Mas o que eles fazem, afinal? Descubra com a Vanessa!"}
+        videoDescription={"Pretinho Básico, conhecido também pela sigla PB, é um programa humorístico de rádio transmitido 2 vezes por dia, de seg a sex, às 13h e às 18h, originalmente pela Rede Atlântida desde Abril de 2007. está disponível nas principais plataformas de streaming com o Spotify no formato de podcast."}
       />
 
       <Carousel
