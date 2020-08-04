@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import TemplateBase from '../../../components/TemplateBase';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import FormField from '../../../components/FormField';
 
 function CadastroCategoria(){
+    
+    const [categories, setCategories] = useState([]);
     
     const defaultCategory = {
         name : '',
@@ -12,36 +15,67 @@ function CadastroCategoria(){
 
     const [category, setCategory] = useState(defaultCategory);
 
-    function setValue(key, value){
-        console.log('key|value:');
-        console.log(`-> ${key}|${value}`);
+    function setCategoryAttribute(key, value){
         setCategory({
             ...category,
             [key]: value,
         });
     }    
 
+    function handleValue(e){
+        setCategoryAttribute(
+            e.target.getAttribute("name"),
+            e.target.value);
+    }
+
     return( 
         <TemplateBase>
             <h1>Cadastro de Categoria: {category.name}</h1>
-            <form>
-                <div>
-                    <label>
-                        Nome da Categoria:
-                        <input 
-                            type="text"
-                            name="name"
-                            //value={category.name}
-                            onChange={function handleValue(e){
-                                setValue("name", e.target.value);
-                            }}
-                            />
-                    </label>                
-                </div>                
+            <form onSubmit={
+                function handleSubmit(e){
+                    e.preventDefault();
+                    setCategories([
+                        ...categories,
+                        category
+                    ]);
+                }
+            }>
+                <FormField 
+                    fieldType = 'text'
+                    fieldName = 'name'
+                    fieldLabel = 'Nome da Categoria'
+                    value = { category.name }
+                    onChange={ handleValue }    
+                />
+                <FormField 
+                    fieldType = 'text'
+                    fieldName = 'description'
+                    fieldLabel = 'Descrição'
+                    value = { category.description }
+                    onChange={ handleValue }    
+                />
+                <FormField 
+                    fieldType = 'color'
+                    fieldName = 'color'
+                    fieldLabel = 'Cor'
+                    value = { category.color }
+                    onChange={ handleValue }    
+                />                
                 <button>
                     Cadastrar
                 </button>
             </form>
+
+            <ul>
+                {categories.map((c, i) => {
+                    return (
+                        //<li key={`${c.name}${i}`} style={{background:c.color}}>
+                        <li key={`${c.name}${i}`}>
+                            {c.name}
+                        </li>
+                    );
+                })}
+            </ul>
 
             <Link to="/">
                 Home
