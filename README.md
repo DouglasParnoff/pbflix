@@ -1,7 +1,7 @@
 ## PBFLIX
 Projeto desenvolvido junto à [Imersão React da Alura](https://www.alura.com.br/).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#ImersaoReact
 
 ![GitHub](https://img.shields.io/github/license/douglasparnoff/pbflix)
 
