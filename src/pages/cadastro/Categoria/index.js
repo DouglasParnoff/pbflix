@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import TemplateBase from '../../../components/TemplateBase';
 import FormField from '../../../components/FormField';
@@ -29,11 +29,23 @@ function CadastroCategoria() {
     );
   }
 
+  useEffect(
+    () => {
+      const URL_CATEGORIES = 'http://localhost:8080/categories';
+      fetch(URL_CATEGORIES)
+        .then(async (serverResponse) => {
+          const response = await serverResponse.json();
+          setCategories(
+            [...response],
+          );
+        });
+    }, [],
+  );
+
   return (
     <TemplateBase>
       <h1>
         Cadastro de Categoria:
-        {category.name}
       </h1>
       <form onSubmit={
                 function handleSubmit(e) {
@@ -71,10 +83,16 @@ function CadastroCategoria() {
         </Button>
       </form>
 
+      {categories.length === 0 && (
+        <div>
+          Loading...
+        </div>
+      )}
+
       <ul>
         {categories.map((c, i) => (
           // <li key={`${c.name}${i}`} style={{background:c.color}}>
-          <li key={`${c.name}${i}`}>
+          <li key={`${c.name}${c.id}`}>
             {c.name}
           </li>
         ))}
