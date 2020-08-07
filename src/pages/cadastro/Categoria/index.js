@@ -31,7 +31,9 @@ function CadastroCategoria() {
 
   useEffect(
     () => {
-      const URL_CATEGORIES = 'http://localhost:8080/categories';
+      const URL_CATEGORIES = window.location.hostname.includes('localhost')
+        ? 'http://localhost:8080/categories'
+        : 'https://pbflix.herokuapp.com/categories';
       fetch(URL_CATEGORIES)
         .then(async (serverResponse) => {
           const response = await serverResponse.json();
@@ -48,14 +50,14 @@ function CadastroCategoria() {
         Cadastro de Categoria:
       </h1>
       <form onSubmit={
-                function handleSubmit(e) {
-                  e.preventDefault();
-                  setCategories([
-                    ...categories,
-                    category,
-                  ]);
-                }
-            }
+        function handleSubmit(e) {
+          e.preventDefault();
+          setCategories([
+            ...categories,
+            category,
+          ]);
+        }
+      }
       >
         <FormField
           fieldType="text"
