@@ -26,7 +26,30 @@ function getAll() {
     });
 }
 
+function create(category) {
+  // eslint-disable-next-line no-console
+  return fetch(
+    config.getUrl('/categories'),
+    {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+      },
+      body: JSON.stringify(category),
+    },
+  )
+    .then(async (serverResponse) => {
+      if (serverResponse.ok) {
+        const response = await serverResponse.json();
+        return response;
+      }
+
+      throw new Error('Não foi possível cadastrar os dados');
+    });
+}
+
 export default {
   getAllWithVideos,
-  getAll
+  getAll,
+  create,
 };
