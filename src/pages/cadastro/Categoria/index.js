@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import TemplateBase from '../../../components/TemplateBase';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import useForm from '../../../hooks/useForm';
 
 function CadastroCategoria() {
   const [categories, setCategories] = useState([]);
@@ -13,36 +14,11 @@ function CadastroCategoria() {
     color: '#000000',
   };
 
-  const [category, setCategory] = useState(defaultCategory);
+  const { myObject: category, handleValue, clearForm } = useForm(defaultCategory);
 
-  function setCategoryAttribute(key, value) {
-    setCategory({
-      ...category,
-      [key]: value,
-    });
-  }
+  useEffect(() => {
 
-  function handleValue(e) {
-    setCategoryAttribute(
-      e.target.getAttribute('name'),
-      e.target.value,
-    );
-  }
-
-  useEffect(
-    () => {
-      const URL_CATEGORIES = window.location.hostname.includes('localhost')
-        ? 'http://localhost:8080/categories'
-        : 'https://pbflix.herokuapp.com/categories';
-      fetch(URL_CATEGORIES)
-        .then(async (serverResponse) => {
-          const response = await serverResponse.json();
-          setCategories(
-            [...response],
-          );
-        });
-    }, [],
-  );
+  }, []);
 
   return (
     <TemplateBase>
@@ -56,6 +32,7 @@ function CadastroCategoria() {
             ...categories,
             category,
           ]);
+          clearForm();
         }
       }
       >

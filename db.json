@@ -1,10 +1,348 @@
 {
-    "categories" : [
-        {
-            "id": 1,
-            "name": "Primeira categoria",
-            "description": "Descrição da primeira categoria :) ",
-            "color": "#cbd1ff"
-        }
-    ]
+  "categories": [
+    {
+      "id": 1,
+      "title": "Live das 18h",
+      "link": "https://www.youtube.com/playlist?list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN",
+      "color": "#00C86F",
+      "link_extra": {
+        "text": "Lives do PB",
+        "url": "https://www.youtube.com/playlist?list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Live das 13h",
+      "link": "https://www.youtube.com/playlist?list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN",
+      "color": "#6BD1FF",
+      "link_extra": {
+        "text": "Lives do PB",
+        "url": "https://www.youtube.com/playlist?list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Melhores Momentos do PB",
+      "color": "#9cd33b",
+      "link_extra": {
+        "text": "Compilado de toda a zoeira do programa",
+        "url": "https://www.youtube.com/playlist?list=PLGH1-_CLKZvFjO2cbw2Pr7tS-Ptr6GVqy"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Piadas da Semana",
+      "color": "orange"
+    },
+    {
+      "id": 5,
+      "title": "Melhores da Rede",
+      "color": "red",
+      "link_extra": {
+        "text": "Melhores Momentos de diversos programas",
+        "url": "https://www.youtube.com/playlist?list=PLGH1-_CLKZvFKQPwKLGdsZm0CjA8eoLLz"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Compilado geral",
+      "color": "#6b5be2"
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoryId": 1,
+      "title": "Dia 31/07/2020",
+      "url": "https://www.youtube.com/watch?v=4THSFXKzaLc"
+    },
+    {
+      "id": 2,
+      "categoryId": 1,
+      "title": "Dia 30/07/2020",
+      "url": "https://www.youtube.com/watch?v=5rFPGrQB3xQ&list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN&index=4&t=0s"
+    },
+    {
+      "id": 3,
+      "categoryId": 1,
+      "title": "Dia 29/07/2020",
+      "url": "https://www.youtube.com/watch?v=QZiBW2Ob2ow&list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN&index=6&t=0s"
+    },
+    {
+      "id": 4,
+      "categoryId": 1,
+      "title": "Dia 28/07/2020",
+      "url": "https://www.youtube.com/watch?v=mL_nOk3iay4&list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN&index=8&t=0s"
+    },
+    {
+      "id": 5,
+      "categoryId": 1,
+      "title": "Dia 27/07/2020",
+      "url": "https://www.youtube.com/watch?v=7znHf9xyeFg&list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN&index=10&t=0s"
+    },
+    {
+      "id": 6,
+      "categoryId": 1,
+      "title": "Dia 24/07/2020",
+      "url": "https://www.youtube.com/watch?v=e8NeDSCT7NU&list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN&index=12&t=0s"
+    },
+    {
+      "id": 7,
+      "categoryId": 1,
+      "title": "Dia 23/07/2020",
+      "url": "https://www.youtube.com/watch?v=ZWxn8tcC-jg&list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN&index=14&t=0s"
+    },
+    {
+      "id": 8,
+      "categoryId": 1,
+      "title": "Dia 22/07/2020",
+      "url": "https://www.youtube.com/watch?v=V-tYexzMO8w&list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN&index=16&t=0s"
+    },
+    {
+      "id": 9,
+      "categoryId": 1,
+      "title": "Dia 21/07/2020",
+      "url": "https://www.youtube.com/watch?v=5clONon5ET0&list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN&index=18&t=0s"
+    },
+    {
+      "id": 10,
+      "categoryId": 1,
+      "title": "Dia 20/07/2020",
+      "url": "https://www.youtube.com/watch?v=7_nqQTwkC-0&list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN&index=20&t=0s"
+    },
+    {
+      "id": 11,
+      "categoryId": 2,
+      "title": "Dia 31/07/2020",
+      "url": "https://www.youtube.com/watch?v=IIuV5no7JWQ&list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN&index=3&t=0s"
+    },
+    {
+      "id": 12,
+      "categoryId": 2,
+      "title": "Dia 30/07/2020",
+      "url": "https://www.youtube.com/watch?v=xBftfRp06H8&list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN&index=5&t=0s"
+    },
+    {
+      "id": 13,
+      "categoryId": 2,
+      "title": "Dia 29/07/2020",
+      "url": "https://www.youtube.com/watch?v=y9pnIQTwKco&list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN&index=7&t=0s"
+    },
+    {
+      "id": 14,
+      "categoryId": 2,
+      "title": "Dia 28/07/2020",
+      "url": "https://www.youtube.com/watch?v=Pdw-6Dy95yI&list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN&index=9&t=0s"
+    },
+    {
+      "id": 15,
+      "categoryId": 2,
+      "title": "Dia 27/07/2020",
+      "url": "https://www.youtube.com/watch?v=RckrcinggN0&list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN&index=11&t=0s"
+    },
+    {
+      "id": 16,
+      "categoryId": 2,
+      "title": "Dia 24/07/2020",
+      "url": "https://www.youtube.com/watch?v=uB3DsUFSdL4&list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN&index=13&t=0s"
+    },
+    {
+      "id": 17,
+      "categoryId": 2,
+      "title": "Dia 23/07/2020",
+      "url": "https://www.youtube.com/watch?v=yyBRaXYQ3Pg&list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN&index=15&t=0s"
+    },
+    {
+      "id": 18,
+      "categoryId": 2,
+      "title": "Dia 22/07/2020",
+      "url": "https://www.youtube.com/watch?v=Bh726CTS2o0&list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN&index=17&t=164s"
+    },
+    {
+      "id": 19,
+      "categoryId": 2,
+      "title": "Dia 21/07/2020",
+      "url": "https://www.youtube.com/watch?v=mojNXaJfPoI&list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN&index=19&t=0s"
+    },
+    {
+      "id": 20,
+      "categoryId": 2,
+      "title": "Dia 20/07/2020",
+      "url": "https://www.youtube.com/watch?v=dYMiIGp41yU&list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN&index=21&t=0s"
+    },
+    {
+      "id": 21,
+      "categoryId": 3,
+      "title": "Como vai ser o pós Covid",
+      "url": "https://www.youtube.com/watch?v=Q0i2cEAZDW4&list=PLGH1-_CLKZvFjO2cbw2Pr7tS-Ptr6GVqy&index=26&t=0s"
+    },
+    {
+      "id": 22,
+      "categoryId": 3,
+      "title": "Santaninha invade o PB",
+      "url": "https://www.youtube.com/watch?v=hSopajyqwcU&list=PLGH1-_CLKZvFjO2cbw2Pr7tS-Ptr6GVqy&index=16&t=0s"
+    },
+    {
+      "id": 23,
+      "categoryId": 3,
+      "title": "PBs contam histórias do exterior",
+      "url": "https://www.youtube.com/watch?v=hCLeNg9Jf_U&list=PLGH1-_CLKZvFjO2cbw2Pr7tS-Ptr6GVqy&index=4&t=0s"
+    },
+    {
+      "id": 24,
+      "categoryId": 3,
+      "title": "Frase de caminhoneiro",
+      "url": "https://www.youtube.com/watch?v=34KVkeSyGFQ&list=PLGH1-_CLKZvFjO2cbw2Pr7tS-Ptr6GVqy&index=5&t=0s"
+    },
+    {
+      "id": 25,
+      "categoryId": 3,
+      "title": "Significado dos palavões",
+      "url": "https://www.youtube.com/watch?v=YaYY6kOjcoU&list=PLGH1-_CLKZvFjO2cbw2Pr7tS-Ptr6GVqy&index=9&t=0s"
+    },
+    {
+      "id": 26,
+      "categoryId": 3,
+      "title": "Live que termina em tiroteio",
+      "url": "https://www.youtube.com/watch?v=y0WxaBPBf_E&list=PLGH1-_CLKZvFjO2cbw2Pr7tS-Ptr6GVqy&index=10&t=0s"
+    },
+    {
+      "id": 27,
+      "categoryId": 3,
+      "title": "Sexy hot no Planeta Atlantida",
+      "url": "https://www.youtube.com/watch?v=3qNI4rpJUA4&list=PLGH1-_CLKZvFjO2cbw2Pr7tS-Ptr6GVqy&index=13&t=0s"
+    },
+    {
+      "id": 28,
+      "categoryId": 3,
+      "title": "Soltos em Floripa",
+      "url": "https://www.youtube.com/watch?v=pfP0pwdodPs&list=PLGH1-_CLKZvFjO2cbw2Pr7tS-Ptr6GVqy&index=14&t=0s"
+    },
+    {
+      "id": 29,
+      "categoryId": 4,
+      "title": "31/07/2020",
+      "url": "https://www.youtube.com/watch?v=F053XIoWrGE&list=PLGH1-_CLKZvFc1wWtNLzsFgiSqivZq5C7&index=2&t=451s"
+    },
+    {
+      "id": 30,
+      "categoryId": 4,
+      "title": "24/07/2020",
+      "url": "https://www.youtube.com/watch?v=Maq3WL6j-MI&list=PLGH1-_CLKZvFc1wWtNLzsFgiSqivZq5C7&index=3&t=0s"
+    },
+    {
+      "id": 31,
+      "categoryId": 4,
+      "title": "17/07/2020",
+      "url": "https://www.youtube.com/watch?v=9CWlNhnUaLA&list=PLGH1-_CLKZvFc1wWtNLzsFgiSqivZq5C7&index=4&t=0s"
+    },
+    {
+      "id": 32,
+      "categoryId": 4,
+      "title": "10/07/2020",
+      "url": "https://www.youtube.com/watch?v=VTnNArfQ85c&list=PLGH1-_CLKZvFc1wWtNLzsFgiSqivZq5C7&index=5&t=0s"
+    },
+    {
+      "id": 33,
+      "categoryId": 4,
+      "title": "03/07/2020",
+      "url": "https://www.youtube.com/watch?v=JNtKp9L-704&list=PLGH1-_CLKZvFc1wWtNLzsFgiSqivZq5C7&index=6&t=0s"
+    },
+    {
+      "id": 34,
+      "categoryId": 4,
+      "title": "26/06/2020",
+      "url": "https://www.youtube.com/watch?v=j09m4pD2_dQ&list=PLGH1-_CLKZvFc1wWtNLzsFgiSqivZq5C7&index=7&t=0s"
+    },
+    {
+      "id": 35,
+      "categoryId": 4,
+      "title": "19/06/2020",
+      "url": "https://www.youtube.com/watch?v=QAP9xuXwfkY&list=PLGH1-_CLKZvFc1wWtNLzsFgiSqivZq5C7&index=8&t=0s"
+    },
+    {
+      "id": 36,
+      "categoryId": 4,
+      "title": "12/06/2020",
+      "url": "https://www.youtube.com/watch?v=X4xkMy2bLSU&list=PLGH1-_CLKZvFc1wWtNLzsFgiSqivZq5C7&index=9&t=0s"
+    },
+    {
+      "id": 37,
+      "categoryId": 5,
+      "title": "Melhores naming br",
+      "url": "https://www.youtube.com/watch?v=eerm9CseJwg&list=PLGH1-_CLKZvFKQPwKLGdsZm0CjA8eoLLz&index=2&t=202s"
+    },
+    {
+      "id": 38,
+      "categoryId": 5,
+      "title": "Casal fala da mesma traição sem saber",
+      "url": "https://www.youtube.com/watch?v=7k5m8QJMa1E&list=PLGH1-_CLKZvFKQPwKLGdsZm0CjA8eoLLz&index=3&t=0s"
+    },
+    {
+      "id": 39,
+      "categoryId": 5,
+      "title": "SOS Boneca Inflável",
+      "url": "https://www.youtube.com/watch?v=9Vs112l-SZs&list=PLGH1-_CLKZvFKQPwKLGdsZm0CjA8eoLLz&index=10&t=0s"
+    },
+    {
+      "id": 40,
+      "categoryId": 5,
+      "title": "Juju estragando bordões",
+      "url": "https://www.youtube.com/watch?v=sdyKtmEj3ZY&list=PLGH1-_CLKZvFKQPwKLGdsZm0CjA8eoLLz&index=13&t=0s"
+    },
+    {
+      "id": 41,
+      "categoryId": 5,
+      "title": "Cantadas do Jorge e Vampeta Pelado",
+      "url": "https://www.youtube.com/watch?v=z4fLDehD_7s&list=PLGH1-_CLKZvFKQPwKLGdsZm0CjA8eoLLz&index=15&t=0s"
+    },
+    {
+      "id": 42,
+      "categoryId": 6,
+      "title": "Alcemar xingando carros",
+      "url": "https://www.youtube.com/watch?v=52s3PP2TPEk"
+    },
+    {
+      "id": 43,
+      "categoryId": 6,
+      "title": "Causos do nego veio 1",
+      "url": "https://www.youtube.com/watch?v=6CZ9UMlh7hw&list=PLIpDBwZq6gKyVl6u3kqQqOi6DRSPcTL4R&index=2&t=0s"
+    },
+    {
+      "id": 44,
+      "categoryId": 6,
+      "title": "Vendedor fanho",
+      "url": "https://www.youtube.com/watch?v=Y_XYq_EGrRE&list=PLIpDBwZq6gKyVl6u3kqQqOi6DRSPcTL4R&index=10&t=0s"
+    },
+    {
+      "id": 45,
+      "categoryId": 6,
+      "title": "Causos do nego veio 2",
+      "url": "https://www.youtube.com/watch?v=FZ6o-UJQekU&list=PLIpDBwZq6gKyVl6u3kqQqOi6DRSPcTL4R&index=3&t=0s"
+    },
+    {
+      "id": 46,
+      "categoryId": 6,
+      "title": "Duda com o Doga10",
+      "url": "https://www.youtube.com/watch?v=ZiDFctJdA8E"
+    },
+    {
+      "id": 47,
+      "categoryId": 6,
+      "title": "5 no monza não dá",
+      "url": "https://www.youtube.com/watch?v=tTAAIu-OdPw"
+    },
+    {
+      "titulo": "Dia 03/08/2020",
+      "url": "https://www.youtube.com/watch?v=DGUKTArmJ1g&list=PL1BOVtlY-CbWVbqdzEy8TVAilEuKP_SXN&index=12&t=0s",
+      "categoryId": 1,
+      "id": 48
+    },
+    {
+      "titulo": "Piadas de sogra do Gaudêncio",
+      "url": "https://www.youtube.com/watch?v=_PMEU6txymM",
+      "categoryId": 4,
+      "id": 49
+    }
+  ]
 }
