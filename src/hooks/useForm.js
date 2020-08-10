@@ -1,28 +1,28 @@
 import { useState } from 'react';
 
-function useForm(defaultCategory) {
-  const [category, setCategory] = useState(defaultCategory);
+function useForm(defaultValues) {
+  const [myObject, setMyObject] = useState(defaultValues);
 
-  function setCategoryAttribute(key, value) {
-    setCategory({
-      ...category,
+  function setMyObjectAttribute(key, value) {
+    setMyObject({
+      ...myObject,
       [key]: value,
     });
   }
 
   function handleValue(e) {
-    setCategoryAttribute(
+    setMyObjectAttribute(
       e.target.getAttribute('name'),
       e.target.value,
     );
   }
 
   function clearForm() {
-    setCategory(defaultCategory);
+    setMyObject(defaultValues);
   }
 
   return {
-    category,
+    myObject,
     handleValue,
     clearForm,
   };

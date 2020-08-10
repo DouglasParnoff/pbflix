@@ -14,12 +14,11 @@ function CadastroCategoria() {
     color: '#000000',
   };
 
-  const { category, handleValue, clearForm } = useForm(defaultCategory);
+  const { myObject: category, handleValue, clearForm } = useForm(defaultCategory);
 
   useEffect(() => {
 
-    }, [],
-  );
+  }, []);
 
   return (
     <TemplateBase>

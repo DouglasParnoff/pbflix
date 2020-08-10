@@ -24,12 +24,12 @@ function Home() {
       {initialValues.length === 0 && (<div> Loading ... </div>)}
 
       {initialValues.map((category, index) => {
-        const elementKey = category.key + category.titulo;
+        const elementKey = category.key + category.title;
         if (index === 0) {
           return (
             <div key={elementKey}>
               <BannerMain
-                videoTitle={category.videos[0].titulo}
+                videoTitle={category.videos[0].title}
                 url={category.videos[0].url}
                 videoDescription="Pretinho Básico, conhecido também pela sigla PB, é um programa humorístico de rádio transmitido 2 vezes por dia, de seg a sex, às 13h e às 18h, originalmente pela Rede Atlântida desde Abril de 2007. está disponível nas principais plataformas de streaming com o Spotify no formato de podcast."
               />
