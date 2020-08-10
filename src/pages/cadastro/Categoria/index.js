@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { Link, useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import TemplateBase from '../../../components/TemplateBase';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import useForm from '../../../hooks/useForm';
+import repository from '../../../repositories/category';
 
 function CadastroCategoria() {
   const [categories, setCategories] = useState([]);
-
+  const history = useHistory();
   const defaultCategory = {
     name: '',
     description: '',
@@ -32,7 +33,9 @@ function CadastroCategoria() {
             ...categories,
             category,
           ]);
+          repository.create(category);
           clearForm();
+          history.push('/');
         }
       }
       >
